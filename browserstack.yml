@@ -34,11 +34,15 @@ platforms:
   - os: OS X
     osVersion: Ventura
     browserName: playwright-webkit
-    browserVersion: latest
+    browserVersion: 15.4
+    playwrightConfigOptions:
+      name: webkit-15.4-osx
   - os: Windows
     osVersion: 11
     browserName: playwright-firefox
-    browserVersion: latest
+    browserVersion: 115
+    playwrightConfigOptions:
+      name: firefox-115-win
 
 # =======================
 # Parallels per Platform

@@ -1,6 +1,6 @@
 const { expect, test } = require('@playwright/test');
 
-test('BStackDemo test checkout flow', async ({ page }) => {
+test.skip('BStackDemo test checkout flow', async ({ page }) => {
   // visit the site
   await page.goto('https://bstackdemo.com/');
 

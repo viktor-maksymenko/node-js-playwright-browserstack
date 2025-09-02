@@ -15,7 +15,10 @@ const config = {
   /* tests in parallel */
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'line',
+  reporter: [
+    ['html', { open: 'never' }], 
+    ['line'],
+  ],
   /* Configure projects for major browsers */
   projects: [
     {
